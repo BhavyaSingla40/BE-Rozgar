@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/jpeg" href="BeRozgarLogo.jpeg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:white;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgb(1, 30, 58);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 4px;
+            background-color: white;
+            color: black;
+        }
+
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #fff;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #777;
+        }
+
+        .register-link {
+            margin-top: 15px;
+        }
+
+        .register-link a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .register-link a:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <p class="><a href="#">Forgot password?</a></p>
+
+            <button type="submit">Login</button>
+            <p class="register-link">Don't have an account? <a href="#">Register here</a></p>
+        </form>
+    </div>
+</body>
+</html>
